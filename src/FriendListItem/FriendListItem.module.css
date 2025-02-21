@@ -1,0 +1,23 @@
+.online {
+  color: green;
+}
+
+.offline {
+  color: red;
+}
+
+.friendListItem {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.friendListItem img {
+  margin: 0 auto;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
