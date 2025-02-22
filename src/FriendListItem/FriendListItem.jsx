@@ -1,4 +1,5 @@
-import { BsFillCircleFill } from "react-icons/bs";
+import { FiSmile } from "react-icons/fi";
+import { FiMeh } from "react-icons/fi";
 import clsx from "clsx";
 import css from "./FriendListItem.module.css";
 
@@ -9,7 +10,11 @@ export default function FriendListItem({ friend: { avatar, name, isOnline } }) {
       <hr />
       <p>{name}</p>
       <p className={clsx(css.text, isOnline ? css.online : css.offline)}>
-        <BsFillCircleFill />
+        {isOnline ? (
+          <FiSmile className={css.icon} />
+        ) : (
+          <FiMeh className={css.icon} />
+        )}
         {isOnline ? "Online" : "Offline"}
       </p>
     </div>
